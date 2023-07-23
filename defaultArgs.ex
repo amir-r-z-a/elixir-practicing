@@ -4,11 +4,13 @@ defmodule Concat do
     # IO.puts("first")
   end
 
-
+  # A function head declaring defaults
   def join(a, b, _sep) when is_nil(b) do
     IO.puts("second")
     a
   end
+
+
 
   def join(a, b, sep) do
     IO.puts("third")
